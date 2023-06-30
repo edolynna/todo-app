@@ -1,0 +1,86 @@
+.todo {
+    padding: 6px 26px;
+    width: 740px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    border-radius: 16px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 32px;
+}
+
+.todoText {
+    display: flex;
+    align-items: center;
+}
+
+.checkIcon {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.deleteIcon {
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    text-align: end;
+}
+
+.completedTodo {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.completedTodo .todoText {
+    text-decoration: line-through;
+    color: #1D40BA;
+}
+
+.completedTodo .checkIcon {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D40BA;
+    border: none;
+}
+
+.completedTodo .checkIcon:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../../public/done.svg);
+    background-size: 20px 20px;
+}
+
+@media only screen and (max-width: 980px) { 
+    .todo {
+        padding: 3px 11px;
+        width: 82%;
+        height: 36px;
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+    .todo,
+    .deleteIcon {
+        font-size: 12px;
+    }
+    .checkIcon {
+        width: 18px;
+        height: 18px;
+    }
+    .completedTodo .checkIcon {
+        width: 22px;
+        height: 22px;
+    }
+}

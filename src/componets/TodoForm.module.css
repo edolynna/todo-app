@@ -1,0 +1,58 @@
+.todoFormContainer {
+    margin-bottom: 30px;
+}
+
+.todoFormContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+  
+.todoFormContainer input {
+    padding-left: 26px;
+    width: 594px;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 16px;
+}
+
+.todoFormContainer button {
+    margin-left: 34px;
+    width: 138px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #1D40BA;
+    border: none;
+    border-radius: 16px;
+}
+
+.todoFormContainer button:disabled {
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 980px) { 
+    .todoFormContainer {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .todoFormContainer input {
+        padding-left: 11px;
+        width: 56%;
+    }
+    .todoFormContainer button {
+        margin-left: 14px;
+        width: 25%;
+    }
+    .todoFormContainer input,
+    .todoFormContainer button {
+        height: 42px;
+        font-size: 14px;
+    }
+}

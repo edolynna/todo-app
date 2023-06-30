@@ -1,0 +1,9 @@
+@media only screen and (max-width: 980px) { 
+    .todoListContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
