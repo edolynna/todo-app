@@ -4,12 +4,6 @@
 <!-- Description -->
 <p align="left">This is a simple Todo application built using React. It allows users to create, delete, and toggle completion status of Todo items. The application also utilizes local storage to persist Todo items even after page reloads.</p>
 
-<!-- Design -->
-<h2 align="left">Design</h2>
-<p align="left">
-  <img src="design/design.png" alt="Todo App Design" width="500">
-</p>
-
 <!-- Features -->
 <h2 align="left">Features</h2>
 <ul align="left">
