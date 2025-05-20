@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+<!-- Title -->
+<h1 align="left">Todo App</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Description -->
+<p align="left">This is a simple Todo application built using React. It allows users to create, delete, and toggle completion status of Todo items. The application also utilizes local storage to persist Todo items even after page reloads.</p>
 
-## Available Scripts
+<!-- Design -->
+<h2 align="left">Design</h2>
+<p align="left">
+  <img src="design/design.png" alt="Todo App Design" width="500">
+</p>
 
-In the project directory, you can run:
+<!-- Features -->
+<h2 align="left">Features</h2>
+<ul align="left">
+  <li><strong>Add Todo:</strong> Users can add new Todo items by entering text and clicking the "Submit" button.</li>
+  <li><strong>Delete Todo:</strong> Users can delete Todo items by clicking on the delete icon next to each item.</li>
+  <li><strong>Edit Todo:</strong> Users can edit existing Todo items by clicking the edit icon and modifying the text.</li>
+  <li><strong>Clear All:</strong> When there are more than 5 todos, a "Clear All" button appears to remove all todos at once.</li>
+  <li><strong>Local Storage:</strong> Todo items are saved to local storage, allowing them to persist even after the browser window is closed or refreshed.</li>
+</ul>
 
-### `npm start`
+<!-- Technologies Used -->
+<h2 align="left">Technologies Used</h2>
+<p align="left">React, JavaScript (ES6+), HTML, CSS</p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- Usage -->
+<h2 align="left">Usage</h2>
+<ul align="left">
+  <li><strong>Adding a Todo:</strong> Enter the text of your new Todo item in the input field and click the "Submit" button.</li>
+  <li><strong>Deleting a Todo:</strong> Click on the delete icon next to the Todo item you wish to delete.</li>
+  <li><strong>Editing a Todo:</strong> Click on the edit icon next to the Todo item, modify the text, and press Enter or click the edit icon again to save.</li>
+  <li><strong>Clearing All Todos:</strong> When you have more than 5 todos, click the "Clear All" button to remove all todos at once.</li>
+  <li><strong>Toggling Completion:</strong> Click on the text of a Todo item to mark it as completed or incomplete.</li>
+</ul>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- Acknowledgements -->
+<h2 align="left">Acknowledgements</h2>
+<p align="left">This Todo app was created as part of a learning project and was inspired by various tutorials and resources available online.</p>

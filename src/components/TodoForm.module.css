@@ -1,0 +1,81 @@
+.todoFormContainer {
+    margin-bottom: 30px;
+}
+
+.todoFormContainer form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+  
+.todoFormContainer input {
+    padding-left: 26px;
+    width: 594px;
+    height: 60px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 12px;
+}
+
+.todoFormContainer input:focus-visible {
+    outline: 2px solid #1D40BA;
+}
+
+.todoFormContainer button {
+    margin-left: 34px;
+    width: 138px;
+    height: 60px;
+    font-size: 24px;
+    line-height: normal;
+    font-weight: 400;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #1D40BA;
+    border: none;
+    border-radius: 12px;
+}
+
+@media only screen and (max-width: 980px) { 
+    .todoFormContainer {
+        width: 100%;
+        margin-bottom: 22px;
+    }
+
+    .todoFormContainer form {
+        margin: 0 auto;
+        width: 86%;
+        justify-content: space-between;
+    }
+
+    .todoFormContainer input {
+        padding-left: 11px;
+        width: 80%;
+    }
+
+    .todoFormContainer input:focus-visible {
+        outline: 1px solid #1D40BA;
+    }
+
+    .todoFormContainer button {
+        margin-left: 14px;
+        width: 38%;
+    }
+
+    .todoFormContainer input {
+        height: 42px;
+        font-size: 14px;
+    }
+    .todoFormContainer button {
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 430px) { 
+    .todoFormContainer form {
+        width: 90%;
+    }
+}

@@ -1,0 +1,173 @@
+.todo {
+    padding: 18px 26px;
+    width: 740px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 20px;
+    border-radius: 12px;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.1);
+    border: none;
+    margin-bottom: 32px;
+}
+
+.todoText {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.checkIcon {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+
+.todoTextConcent {
+    margin-left: 15px;
+    width: 96%;
+    text-align: left;
+}
+
+.deleteIcon:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-image: url(../../public/close.svg);
+    background-size: 18px 18px;
+}
+
+.completedTodo {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+.completedTodo .todoText {
+    text-decoration: line-through;
+    color: #1D40BA;
+}
+
+.completedTodo .checkIcon {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D40BA;
+    border: none;
+}
+
+.completedTodo .checkIcon:after {
+    content: '';
+    width: 10px;
+    height: 8px;
+    display: block;
+    background-image: url(../../public/done.svg);
+    background-size: 10px 8px;
+}
+
+.completedTodo .deleteIcon:after {
+    background-image: url(../../public/close-selected.svg);
+}
+
+.todoActions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.editIcon {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    background-image: url(../../public/edit.svg);
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+}
+
+.completedTodo .editIcon {
+    background-image: url(../../public/edit-selected.svg);
+}
+
+.editInput {
+    margin-left: 15px;
+    width: 92%;
+    font-size: 18px;
+    line-height: 20px;
+    border: none;
+    background: transparent;
+    color: inherit;
+    font-family: inherit;
+}
+
+.editInput:focus {
+    width: 92%;
+    outline: none;
+}
+
+.editInput:focus-visible {
+    outline: none;
+}
+
+.todo:has(.editInput:focus) {
+    outline: 2px solid #1D40BA;
+}
+
+@media only screen and (max-width: 980px) { 
+    .todo {
+        padding: 11px 14px;
+        width: 82%;
+        font-size: 12px;
+        line-height: 15px;
+        margin-bottom: 22px;
+    }
+
+    .todoTextConcent {
+        margin-left: 10px;
+        width: 88%;
+    }
+
+    .deleteIcon:after {
+        width: 12px;
+        height: 12px;
+        background-size: 12px 12px;
+    }
+
+    .checkIcon {
+        margin-right: 0;
+        width: 16px;
+        height: 16px;
+    }
+
+    .completedTodo .checkIcon:after {
+        width: 10px;
+        height: 8px;
+        background-size: 10px 8px;
+    }
+
+    .completedTodo .checkIcon {
+        margin-right: 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .todoActions {
+        gap: 10px;
+    }
+
+    .editIcon {
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+    }
+
+    .editInput {
+        font-size: 12px;
+    }
+}
