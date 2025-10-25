@@ -2,10 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import Modal from './components/Modal';
 import './App.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   useEffect(() => {
     const storedTodos = localStorage.getItem('todos');
@@ -44,8 +46,17 @@ function App() {
   };
 
   const clearAllTodosHandler = () => {
+    setIsModalOpen(true);
+  };
+
+  const confirmClearAll = () => {
     setTodos([]);
     saveTodosToLocalStorage([]);
+    setIsModalOpen(false);
+  };
+
+  const cancelClearAll = () => {
+    setIsModalOpen(false);
   };
 
   const editTodoHandler = (id, newText) => {
@@ -54,6 +65,11 @@ function App() {
     );
     setTodos(updatedTodos);
     saveTodosToLocalStorage(updatedTodos);
+  };
+
+  const reorderTodosHandler = (reorderedTodos) => {
+    setTodos(reorderedTodos);
+    saveTodosToLocalStorage(reorderedTodos);
   };
 
   return (
@@ -65,6 +81,7 @@ function App() {
         deleteTodo={deleteTodoHandler} 
         toggleTodo={toggleTodoHandler}
         editTodo={editTodoHandler}
+        reorderTodos={reorderTodosHandler}
       />
       {todos.length > 4 && (
         <button 
@@ -74,6 +91,11 @@ function App() {
           Clear all
         </button>
       )}
+      <Modal 
+        isOpen={isModalOpen} 
+        onConfirm={confirmClearAll} 
+        onCancel={cancelClearAll}
+      />
     </div>
   );
 }

@@ -16,8 +16,10 @@
   <li><strong>Add Todo:</strong> Users can add new Todo items by entering text and clicking the "Submit" button.</li>
   <li><strong>Delete Todo:</strong> Users can delete Todo items by clicking on the delete icon next to each item.</li>
   <li><strong>Edit Todo:</strong> Users can edit existing Todo items by clicking the edit icon and modifying the text.</li>
-  <li><strong>Clear All:</strong> When there are more than 5 todos, a "Clear All" button appears to remove all todos at once.</li>
-  <li><strong>Local Storage:</strong> Todo items are saved to local storage, allowing them to persist even after the browser window is closed or refreshed.</li>
+  <li><strong>Toggle Completion:</strong> Click on a Todo item to mark it as completed or incomplete. Completed items are automatically sorted to the bottom.</li>
+  <li><strong>Drag and Drop:</strong> Reorder active Todo items by dragging them using the drag handle icon that appears on hover.</li>
+  <li><strong>Clear All with Confirmation:</strong> When there are more than 5 todos, a "Clear All" button appears. Clicking it opens a confirmation modal to prevent accidental deletion.</li>
+  <li><strong>Local Storage:</strong> Todo items and their order are saved to local storage, allowing them to persist even after the browser window is closed or refreshed.</li>
 </ul>
 
 <!-- Technologies Used -->
@@ -30,8 +32,9 @@
   <li><strong>Adding a Todo:</strong> Enter the text of your new Todo item in the input field and click the "Submit" button.</li>
   <li><strong>Deleting a Todo:</strong> Click on the delete icon next to the Todo item you wish to delete.</li>
   <li><strong>Editing a Todo:</strong> Click on the edit icon next to the Todo item, modify the text, and press Enter or click the edit icon again to save.</li>
-  <li><strong>Clearing All Todos:</strong> When you have more than 5 todos, click the "Clear All" button to remove all todos at once.</li>
-  <li><strong>Toggling Completion:</strong> Click on the text of a Todo item to mark it as completed or incomplete.</li>
+  <li><strong>Toggling Completion:</strong> Click on the text of a Todo item to mark it as completed or incomplete. Completed items automatically move to the bottom of the list.</li>
+  <li><strong>Reordering Todos:</strong> Hover over an active Todo item to reveal the drag handle icon on the left. Click and drag the icon to reorder items in your list. Note: Completed items cannot be reordered.</li>
+  <li><strong>Clearing All Todos:</strong> When you have more than 5 todos, click the "Clear All" button. A confirmation modal will appear asking you to confirm or cancel the action to prevent accidental deletion.</li>
 </ul>
 
 <!-- Acknowledgements -->
